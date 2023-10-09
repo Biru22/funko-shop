@@ -1,0 +1,115 @@
+.item {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  gap: var(--spacing-12);
+  margin-top: var(--spacing-68);
+}
+
+.card-item__cover {
+  display: flex;
+  position: relative;
+}
+
+.card-item__cover img {
+  animation: fade .7s;
+}
+
+.card-item__img--back {
+  display: none;
+}
+
+.card-item__cover:hover .card-item__img--back {
+  display: block;
+}
+
+.card-item__cover:hover .card-item__img--front {
+  display: none;
+}
+
+.item__info {
+  display: grid;
+  gap: var(--spacing-8);
+}
+
+.item__licence {
+  font-size: var(--font-small);
+}
+
+.item__name {
+  font-size: var(--font-jumbo);
+}
+
+.item__description {
+  font-size: var(--font-large);
+}
+
+.item__price {
+  font-size: var(--font-jumbo);
+}
+
+.item__cart {
+  display: flex;
+  gap: var(--spacing-8);
+  align-items: center;
+}
+
+.item__input {
+  font-size: var(--font-large);
+  text-align: center;
+  width: var(--spacing-128);
+  height: var(--spacing-36);
+  border: 0.1rem solid var(--dark-300);
+}
+
+.item__operations {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.item__quantity {
+  background-color: var(--dark-900);
+  color: var(--light-font-solid);
+  border: none;
+  font-size: var(--font-medium);
+  width: var(--spacing-20);
+  height: var(--spacing-20);
+}
+
+.item__submit {
+  background-color: var(--primary-900);
+  border: none;
+  font-size: var(--font-medium);
+  color: var(--light-font-solid);
+  padding: var(--spacing-8);
+}
+
+.item__promo {
+  font-size: var(--font-xsmall);
+  font-weight: bold;
+  color: var(--secondary-solid);
+}
+
+@media (max-width: 768px) {
+  .item {
+    flex-direction: column;
+    margin-top: 0;
+  }
+  .item__info {
+    text-align: center;
+  }
+  .item__cart {
+    justify-content: center;
+  }
+}
+
+
+/* Evitar botones de aumento y decremento en input type number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
