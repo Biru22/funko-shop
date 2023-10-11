@@ -1,3 +1,4 @@
+/* ITEM FOR SALE */
 .item {
   display: flex;
   align-items: center;
@@ -91,6 +92,7 @@
   color: var(--secondary-solid);
 }
 
+/* MEDIA QUERY */
 @media (max-width: 768px) {
   .item {
     flex-direction: column;

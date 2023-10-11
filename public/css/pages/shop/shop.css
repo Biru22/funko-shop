@@ -1,0 +1,148 @@
+.container-shop {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--spacing-68);
+  margin-bottom: var(--spacing-68);
+}
+
+/* FILTER */
+.filter__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-8);
+}
+
+.paragraph {
+  font-size: var(--font-large);
+}
+
+.filter__input {
+  font-size: var(--font-medium);
+  max-width: 200px;
+  padding: var(--spacing-4);
+  padding-right: 0;
+}
+
+/* FILTER (min and max) */
+.filter__price {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: var(--spacing-8);
+}
+
+.price__change {
+  font-size: var(--font-small);
+}
+
+.price__box {
+  font-size: var(--font-small);
+  text-align: center;
+  max-width: var(--spacing-50);
+}
+
+/* FILTER (checkbox) - https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */ 
+.filter__check {
+  display: inline;
+}
+
+.checkbox__selected {
+  font-size: var(--font-medium);
+  color: var(--dark-solid);
+  display: inline-flex;
+  align-items: center;
+  gap: var(--spacing-8);
+  margin-left: var(--spacing-12);
+}
+
+.checkbox__chekings {
+  width: var(--spacing-16);
+  height: var(--spacing-16);
+}
+
+input:checked + label { font-weight: bold }
+
+/* SET OF ITEMS */
+.card {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.card-item {
+  max-width: 400px;
+}
+
+/* PAGINATION */
+.pagination__list {
+  display: flex;
+  justify-content: center;
+  gap: var(--spacing-12);
+}
+
+.pagination__button {
+  font-size: var(--font-medium);
+  font-weight: bold;
+  border: 1px solid var(--dark-300);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: var(--spacing-50);
+  height: var(--spacing-50);
+  border-radius: 4px;
+}
+.pagination__button:hover {
+  border-color: var(--primary-900);
+  color: var(--primary-900);
+}
+
+.pagination__link {
+  display: flex;
+  width: var(--spacing-50);
+  height: var(--spacing-50);
+  align-items: center;
+  justify-content: center;
+}
+
+/* PAGINATION(chevron) */
+.pagination__button:nth-child(1) {
+  background-color: var(--dark-300);
+  border: none;
+}
+
+.pagination__button:nth-child(1):hover {
+  border: 1px solid var(--primary-900);
+}
+
+.pagination__former {
+  color: var(--dark-100);
+  width: var(--spacing-50);
+  height: var(--spacing-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination__former:hover {
+  color: var(--primary-900);
+}
+
+.pagination__next {
+  color: var(--dark-500);
+  width: var(--spacing-50);
+  height: var(--spacing-50);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.pagination__next:hover {
+  color: var(--primary-900);
+}
+
+/* Evitar botones de aumento y decremento en input type number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
