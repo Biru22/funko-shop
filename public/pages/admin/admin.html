@@ -4,9 +4,133 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Admin | Funkoshop</title>
+  <link rel="stylesheet" href="../../css/index.css">
   <link rel="stylesheet" href="../../css/pages/admin/admin.css" />
 </head>
 <body> <!-- /pages/admin/admin.html -->
   <!-- Inicio Header -->
+  <header>
+    <nav class="navbar container">
+      <picture class="navbar__logo">
+        <a href="../../index.html">
+          <img
+            src="../../img/branding/logo_light_horizontal.svg"
+            alt="Isologotivo de la marca Funkoshop"
+          />
+        </a>
+      </picture>
+      <ul class="navbar__menu">
+        <li class="navbar__item with-submenu">
+          <a class="navbar__link with-icon" href="../shop/shop.html"
+            >SHOP <iconify-icon icon="tabler:chevron-down"></iconify-icon>
+          </a>
+          <ul class="submenu">
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Funkos</a>
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Remeras</a>
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Llaveros</a>
+            </li>
+          </ul>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="../admin/login.html">LOGIN</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__cart" href="../shop/carrito.html"
+            ><img src="../../img/icons/cart-icon.svg" alt="Icono de carrito"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Fin Header -->
+  <!-- Inicio Main -->
+  <main class="container-admin">
+    <form class="admin__search" action="">
+      <label class="search__icon" for="search"><iconify-icon icon="radix-icons:magnifying-glass" width="30px" height="30px"></iconify-icon></label>
+      <input class="search__input" type="text" id="search" name="search" placeholder="código, nombre o categoría">
+    </form>
+    <section class="admin__box">
+      <h2 class="admin__title">LISTADO DE PRODUCTOS</h2>
+      <div class="admin__smallBox">
+        <p class="admin__paragraph">AGREGAR</p>
+        <a href="./create.html" class="admin__add"><iconify-icon icon="material-symbols:add" width="30px" height="30px"></iconify-icon></a>
+      </div>
+    </section>
+    <section class="admin__table">
+      <section class="table__title">
+        <p class="table__headers">ID</p>
+        <p class="table__headers">Código</p>
+        <p class="table__headers">Nombre del Producto</p>
+        <p class="table__headers">Categoría</p>
+      </section>
+      <article class="table__article">
+        <p class="table__register">1</p>
+        <p class="table__register">STW001001</p>
+        <p class="table__register">Baby Yoda Blueball</p>
+        <p class="table__register">STAR WARS</p>
+        <div class="table__icons">
+          <a href="./edit.html" class="table__iconPencil"><iconify-icon icon="mdi:pencil" width="22px" height="22px"></iconify-icon></a>
+          <a href="" class="table__iconTrash"><iconify-icon icon="heroicons-solid:trash" width="22px" height="22px"></iconify-icon></a>
+        </div>
+      </article>
+      <article class="table__article">
+        <p class="table__register">2</p>
+        <p class="table__register">STW001002</p>
+        <p class="table__register">Boba Fett Fighter</p>
+        <p class="table__register">STAR WARS</p>
+        <div class="table__icons">
+          <a href="./edit.html" class="table__iconPencil"><iconify-icon icon="mdi:pencil" width="22px" height="22px"></iconify-icon></a>
+          <a href="" class="table__iconTrash"><iconify-icon icon="heroicons-solid:trash" width="22px" height="22px"></iconify-icon></a>
+        </div>
+      </article>
+      <article class="table__article">
+        <p class="table__register">3</p>
+        <p class="table__register">STW001003</p>
+        <p class="table__register">Luke Skylwalker & Grogu</p>
+        <p class="table__register">STAR WARS</p>
+        <div class="table__icons">
+          <a href="./edit.html" class="table__iconPencil"><iconify-icon icon="mdi:pencil" width="22px" height="22px"></iconify-icon></a>
+          <a href="" class="table__iconTrash"><iconify-icon icon="heroicons-solid:trash" width="22px" height="22px"></iconify-icon></a>
+        </div>
+      </article>
+    </section>
+  </main>
+  <!-- Fin Main -->
+  <!-- Inicio Footer -->
+  <footer class="footer">
+    <nav class="navbar container">
+      <ul class="navbar__item">
+        <li class="navbar__item">
+          <a class="navbar__link" href="../shop/shop.html">SHOP</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="../admin/register.html">REGISTRARSE</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="../admin/login.html">LOGIN</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+        </li>
+      </ul>
+      <picture>
+        <img
+          src="../../img/branding/isotype.svg"
+          alt="Isotipo de la marca Funkoshop"
+        />
+      </picture>
+    </nav>
+    <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+  </footer>
+  <!-- Fin Footer -->
+  <script src="https://cdn.jsdelivr.net/npm/iconify-icon@1.0.8/dist/iconify-icon.min.js"></script>
 </body>
 </html>
