@@ -4,9 +4,134 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Edit | Funkoshop</title>
+  <link rel="stylesheet" href="../../css/index.css">
   <link rel="stylesheet" href="../../css/pages/admin/edit.css" />
 </head>
 <body> <!-- /pages/admin/edit.html -->
   <!-- Inicio Header -->
+  <header>
+    <nav class="navbar container">
+      <picture class="navbar__logo">
+        <a href="../../index.html">
+          <img
+            src="../../img/branding/logo_light_horizontal.svg"
+            alt="Isologotivo de la marca Funkoshop"
+          />
+        </a>
+      </picture>
+      <ul class="navbar__menu">
+        <li class="navbar__item with-submenu">
+          <a class="navbar__link with-icon" href="../shop/shop.html"
+            >SHOP <iconify-icon icon="tabler:chevron-down"></iconify-icon>
+          </a>
+          <ul class="submenu">
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Funkos</a>
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Remeras</a>
+            </li>
+            <li class="submenu__item">
+              <a href="" class="submenu__link">Llaveros</a>
+            </li>
+          </ul>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="../admin/login.html">LOGIN</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__cart" href="../shop/carrito.html"
+            ><img src="../../img/icons/cart-icon.svg" alt="Icono de carrito"
+          /></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- Fin Header -->
+  <!-- Inicio Main -->
+  <main class="container-edit">
+    <h2 class="edit__title">EDITAR ITEM</h2>
+    <form class="edit__form" action="">
+      <article class="edit__article">
+        <label class="edit__label" for="edit_category">Categoría:</label>
+        <select class="edit__select" name="edit_category" id="edit_category">
+          <option value="">Figuras</option>
+        </select>
+        <label class="edit__label" for="edit_license">Licencia:</label>
+        <select class="edit__select" name="edit_license" id="edit_license">
+          <option value="">Naruto Shippuden</option>
+        </select>
+      </article>
+      <article class="edit__article">
+        <label class="edit__label" for="edit_name">Nombre del producto:</label>
+        <input class="edit__input" type="text" name="edit_name" id="edit_name">
+      </article>
+      <article class="edit__article">
+        <textarea name="edit_description" id="edit_description" cols="53" rows="10"></textarea>
+      </article>
+      <article class="edit__article">
+        <label class="edit__label" for="edit_sku">SKU:</label>
+        <input class="edit__input" type="text" name="edit_sku" id="edit_sku">
+        <label class="edit__label" for="edit_price">Precio:</label>
+        <input class="edit__input" type="number" name="edit_price" id="edit_price">
+        <label class="edit__label" for="edit_stock">Stock:</label>
+        <input class="edit__inputNumber" type="number" name="edit_stock" id="edit_stock" min="0">
+      </article>
+      <article class="edit__article">
+        <label class="edit__label" for="edit_discounts">Descuento:</label>
+        <input class="edit__inputNumber" type="number" name="edit_discounts" id="edit_discounts" min="0">
+        <label class="edit__label" for="edit_cuota">Cuotas:</label>
+        <select class="edit__select" name="edit_cuota" id="edit_cuota">
+          <option value="">6 Cuotas sin interés</option>
+        </select>
+      </article>
+      <article class="edit__article">
+        <label class="edit__label" for="edit_files">Imágenes:</label>
+        <input type="file" name="edit_files" id="edit_files" accept="image/png, image/jpeg, image/jpg, image/avif, image/webp">
+      </article>
+      <article class="edit__article">
+        <p class="article__paragraph">
+          <img class="edit__img" src="../../img/pokemon/charmander-1.webp" alt="Imagen de Funko seleccionado de frente">Frente
+        </p>
+        <p class="article__paragraph">
+          <img class="edit__img" src="../../img/pokemon/charmander-box.webp" alt="Imagen de Funko seleccionado de dorso">Dorso
+        </p>
+      </article>
+      <article class="edit__article">
+        <input class="edit__submit" type="submit" value="Modificar producto">
+      </article>
+    </form>
+  </main>
+  <!-- Fin Main -->
+  <!-- Inicio Footer -->
+  <footer class="footer">
+    <nav class="navbar container">
+      <ul class="navbar__item">
+        <li class="navbar__item">
+          <a class="navbar__link" href="../shop/shop.html">SHOP</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="../admin/register.html">REGISTRARSE</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="../admin/login.html">LOGIN</a>
+        </li>
+        <li class="navbar__item">
+          <a class="navbar__link" href="./pages/contact.html">CONTACTO</a>
+        </li>
+      </ul>
+      <picture>
+        <img
+          src="../../img/branding/isotype.svg"
+          alt="Isotipo de la marca Funkoshop"
+        />
+      </picture>
+    </nav>
+    <p class="footer__copy">All rights reserved 2023 - Funkoshop &copy;</p>
+  </footer>
+  <!-- Fin Footer -->
 </body>
 </html>

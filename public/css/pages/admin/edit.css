@@ -1,0 +1,101 @@
+.container-edit {
+  max-width: 1200px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-20);
+  margin-top: var(--spacing-36);
+  margin-bottom: var(--spacing-36);
+  
+}
+
+.edit__title {
+  font-size: var(--font-jumbo);
+}
+
+/* FORM */
+.edit__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-20);
+}
+
+.edit__article {
+  display: flex;
+  align-items: center;
+  gap: var(--spacing-20);
+}
+
+.edit__label {
+  font-size: var(--font-medium);
+}
+
+.edit__select {
+  font-size: var(--font-small);
+  border-radius: var(--spacing-4);
+  padding: var(--spacing-4);
+  width: 100%;
+  max-width: var(--spacing-220);
+}
+
+.edit__input, .edit__inputNumber {
+  font-size: var(--font-small);
+  border: none;
+  border-bottom: 2px solid var(--primary-900);
+  border-radius: 1px;
+}
+.edit__input:focus, .edit__inputNumber:focus {
+  outline: none;
+}
+
+#edit_description {
+  font-family: var(--base-font);
+  font-size: var(--font-medium);
+  padding: var(--spacing-8);
+}
+
+#edit_price {
+  max-width: var(--spacing-128);
+}
+
+#edit_sku {
+  text-transform: uppercase;
+}
+
+.edit__inputNumber {
+  max-width: var(--spacing-68);
+  text-align: center;
+}
+
+.article__paragraph {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.edit__img {
+  width: 100%;
+  max-width: var(--spacing-128);
+  height: auto;
+  border-bottom: 2px solid var(--primary-900);
+}
+
+.edit__submit {
+  font-size: var(--font-xsmall);
+  background-color: var(--primary-solid);
+  border: none;
+  color: var(--light-font-solid);
+  padding: var(--spacing-12);
+  cursor: pointer;
+  padding-left: var(--spacing-20);
+  padding-right: var(--spacing-20);
+}
+
+/* Evitar botones de aumento y decremento en input type number */
+input[type=number]::-webkit-inner-spin-button, 
+input[type=number]::-webkit-outer-spin-button { 
+  -webkit-appearance: none; 
+  margin: 0; 
+}
+
+input[type=number] { -moz-appearance:textfield; }
