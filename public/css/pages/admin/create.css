@@ -1,0 +1,15 @@
+#create_description {
+  font-family: var(--base-font);
+  font-size: var(--font-medium);
+  padding: var(--spacing-8);
+}
+
+#create_price {
+  max-width: var(--spacing-128);
+}
+
+#create_sku {
+  text-transform: uppercase;
+  width: 100%;
+  max-width: 210px;
+}
