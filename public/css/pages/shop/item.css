@@ -76,6 +76,7 @@
   font-size: var(--font-medium);
   width: var(--spacing-20);
   height: var(--spacing-20);
+  cursor: pointer;
 }
 
 .item__submit {

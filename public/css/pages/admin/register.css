@@ -28,7 +28,6 @@ body {
 }
 
 /* FORM */
-
 .register__form {
   display: flex;
   flex-direction: column;

@@ -10,6 +10,6 @@ app.use(express.static('public'));
 app.use('/', mainRoutes);
 app.use('/shop', shopRoutes);
 app.use('/admin', adminRoutes);
-app.use('/admin', authRoutes);
+app.use('/auth', authRoutes);
 
 app.listen(4000, () => console.log('Servidor listening on port http://localhost:4000'))
