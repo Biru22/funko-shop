@@ -32,36 +32,18 @@
         <p class="table__headers">Nombre del Producto</p>
         <p class="table__headers">Categoría</p>
       </section>
-      <article class="table__article">
-        <p class="table__register">1</p>
-        <p class="table__register">STW001001</p>
-        <p class="table__register">Baby Yoda Blueball</p>
-        <p class="table__register">STAR WARS</p>
-        <div class="table__icons">
-          <a href="./edit.html" class="table__iconPencil"><iconify-icon icon="mdi:pencil" width="22px" height="22px"></iconify-icon></a>
-          <a href="" class="table__iconTrash"><iconify-icon icon="heroicons-solid:trash" width="22px" height="22px"></iconify-icon></a>
-        </div>
-      </article>
-      <article class="table__article">
-        <p class="table__register">2</p>
-        <p class="table__register">STW001002</p>
-        <p class="table__register">Boba Fett Fighter</p>
-        <p class="table__register">STAR WARS</p>
-        <div class="table__icons">
-          <a href="./edit.html" class="table__iconPencil"><iconify-icon icon="mdi:pencil" width="22px" height="22px"></iconify-icon></a>
-          <a href="" class="table__iconTrash"><iconify-icon icon="heroicons-solid:trash" width="22px" height="22px"></iconify-icon></a>
-        </div>
-      </article>
-      <article class="table__article">
-        <p class="table__register">3</p>
-        <p class="table__register">STW001003</p>
-        <p class="table__register">Luke Skylwalker & Grogu</p>
-        <p class="table__register">STAR WARS</p>
-        <div class="table__icons">
-          <a href="./edit.html" class="table__iconPencil"><iconify-icon icon="mdi:pencil" width="22px" height="22px"></iconify-icon></a>
-          <a href="" class="table__iconTrash"><iconify-icon icon="heroicons-solid:trash" width="22px" height="22px"></iconify-icon></a>
-        </div>
-      </article>
+      <% data.forEach(product => {%> 
+        <article class="table__article">
+          <p class="table__register"><%= product.product_id %></p>
+          <p class="table__register"><%= product.sku %></p>
+          <p class="table__register"><%= product.product_name %></p>
+          <p class="table__register"><%= product.category_name %></p>
+          <div class="table__icons">
+            <a href="/admin/edit/<%= product.product_id %>" class="table__iconPencil"><iconify-icon icon="mdi:pencil" width="22px" height="22px"></iconify-icon></a>
+            <a href="" class="table__iconTrash"><iconify-icon icon="heroicons-solid:trash" width="22px" height="22px"></iconify-icon></a>
+          </div>
+        </article>
+      <% }); %>
     </section>
     </main>
     <!-- Fin Main -->

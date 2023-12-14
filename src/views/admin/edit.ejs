@@ -30,22 +30,22 @@
       </article>
       <article class="edit__article">
         <label class="edit__label" for="edit_name">Nombre del producto:</label>
-        <input class="edit__input" type="text" name="edit_name" id="edit_name">
+        <input class="edit__input" type="text" name="edit_name" id="edit_name" value="<%= product.product_name %>" required>
       </article>
       <article class="edit__article">
-        <textarea name="edit_description" id="edit_description" cols="53" rows="10"></textarea>
+        <textarea name="edit_description" id="edit_description" cols="53" rows="10"><%= product.product_description %></textarea>
       </article>
       <article class="edit__article">
         <label class="edit__label" for="edit_sku">SKU:</label>
-        <input class="edit__input" type="text" name="edit_sku" id="edit_sku">
+        <input class="edit__input" type="text" name="edit_sku" id="edit_sku" value="<%= product.sku %>">
         <label class="edit__label" for="edit_price">Precio:</label>
-        <input class="edit__input" type="number" name="edit_price" id="edit_price">
+        <input class="edit__input" type="number" name="edit_price" id="edit_price" value="<%= product.price %>">
         <label class="edit__label" for="edit_stock">Stock:</label>
-        <input class="edit__inputNumber" type="number" name="edit_stock" id="edit_stock" min="0">
+        <input class="edit__inputNumber" type="number" name="edit_stock" id="edit_stock" min="0" value="<%= product.stock %>">
       </article>
       <article class="edit__article">
         <label class="edit__label" for="edit_discounts">Descuento:</label>
-        <input class="edit__inputNumber" type="number" name="edit_discounts" id="edit_discounts" min="0">
+        <input class="edit__inputNumber" type="number" name="edit_discounts" id="edit_discounts" min="0" value="<%= product.discount %>">
         <label class="edit__label" for="edit_cuota">Cuotas:</label>
         <select class="edit__select" name="edit_cuota" id="edit_cuota">
           <option value="">Sin cuotas sin interés</option>
@@ -59,10 +59,10 @@
       </article>
       <article class="edit__article">
         <p class="article__paragraph">
-          <img class="edit__img" src="../../img/pokemon/charmander-1.webp" alt="Imagen de Funko seleccionado de frente">Frente
+          <img class="edit__img" src="<%= product.img_front %>" alt="Imagen de Funko seleccionado de frente">Frente
         </p>
         <p class="article__paragraph">
-          <img class="edit__img" src="../../img/pokemon/charmander-box.webp" alt="Imagen de Funko seleccionado de dorso">Dorso
+          <img class="edit__img" src="<%= product.img_back %>" alt="Imagen de Funko seleccionado de dorso">Dorso
         </p>
       </article>
       <article class="edit__article">
